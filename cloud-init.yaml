@@ -1,0 +1,15 @@
+stages:     
+   initramfs:
+     - name: "Setup users"
+        users:
+         ludea:
+           password: "c3os"
+
+k3s:
+  enabled: true
+
+c3os:
+  device: "/dev/sda"
+  reboot: true
+  poweroff: true
+  offline: true 
